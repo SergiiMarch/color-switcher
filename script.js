@@ -7,6 +7,7 @@ const text = document.querySelector(".text");
 
 let timer;
 let fontSize = 16;
+const maxFontSize = 84фп;
 
 startButton.addEventListener("click", (evt) => {
   evt.preventDefault();
@@ -35,6 +36,10 @@ stopButton.addEventListener("click", (evt) => {
 });
 
 function changeFontSize() {
-  fontSize += 2;
-  text.style.fontSize = fontSize + "px";
+  if (fontSize < maxFontSize) {
+    fontSize += 2;
+    // перевиряємо чі новий розмір не більший за максимальний розмір
+    fontSize = Math.min(fontSize, maxFontSize);
+    text.style.fontSize = fontSize + "px";
+  }
 }
