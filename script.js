@@ -7,7 +7,7 @@ const text = document.querySelector(".text");
 
 let timer;
 let fontSize = 16;
-const maxFontSize = 84фп;
+const maxFontSize = 84;
 
 startButton.addEventListener("click", (evt) => {
   evt.preventDefault();
