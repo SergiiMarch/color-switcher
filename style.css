@@ -9,12 +9,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
+  background-color: antiquewhite;
   line-height: 1.5;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 .btn__color {
@@ -24,6 +20,7 @@ img {
 .btn__color > button {
   padding: 10px 20px;
   font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   border: 1px solid black;
   border-radius: 10px;
@@ -42,4 +39,6 @@ img {
   display: grid;
   height: 100%;
   place-items: center;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
